@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Button } from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import Onboarding from "react-native-onboarding-swiper";
 import AsyncStorage, {
@@ -15,13 +15,6 @@ const OnboardingScreen = () => {
     await setItem("DUMMY TOKEN");
   };
 
-  // return (
-  //   <View style={styles.container}>
-  //     <Text>Onboarding Screen</Text>
-
-  //     <Button onPress={logInUser} title="FINISH" />
-  //   </View>
-  // );
   const Dots = ({ selected }) => {
     let backgroundColor;
 
